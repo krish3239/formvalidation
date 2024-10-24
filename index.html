@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>form</title>
+  </head>
+  <body>
+    <div class="container">
+      <form onsubmit="return false" id="ff">
+        <div class="heading"><h1>Fill details</h1></div>
+        <div class="firstName">
+          <label for="first">First Name:</label>
+          <br>
+          
+          <input type="text" name="" id="first"  />
+          <span id="f_name">Only alphabet is allowed</span>
+        </div>
+
+        <div class="lastName">
+          <label for="last">Last Name:</label>
+          <br>
+          <input type="text" name="" id="last" />
+        </div>
+
+        <div class="age">
+          <label for="ages">Age:</label>
+          <br>
+          <input type="number" name="" id="ages" />
+        </div>
+
+        <div class="gender">
+            <label for="">Select gender</label>
+            <div class="space">
+          <span><label for="male">Male</label></span>
+          <input type="radio" value="male"   name="genders" id="males" checked="checked" />
+          <span></span>
+          <span><label for="female">Female</label></span>
+          <input type="radio" value="female" name="genders" id="females" />
+        </div>
+    </div>
+
+        <div class="addresses">
+          <label for="address">Address:</label>
+          <br>
+          <textarea name=""  placeholder="enter address" id="address" cols="50" rows="5" resize="none"></textarea
+          >
+        </div>
+        <div class="contacts">
+            <label for="telephone">Contact:</label>
+            <br>
+            <input type="tel" id="telephone" inputmode="tel">
+        </div>
+
+        <div class="emails">
+            <label for="email">email:</label>
+            <br>
+            <input type="email" name="" id="emailss">
+        </div>
+
+        <div class="terms">
+            <input type="checkbox" name="" id="agree">
+            <label for="agree">i agree to share my info</label>
+        </div>
+
+        <div class="sub">
+            <button id="btn" type="submit" >submit</button>
+        </div>
+      </form>
+    </div>
+    <div class="dis">
+      <div id="dfname"></div>
+      <div id="dlname"></div>
+      <div id="dage"></div>
+      <div id="dgender"></div>
+      <div id="daddress"></div>
+      <div id="dcontact"></div>
+      <div id="demail"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
